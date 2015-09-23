@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:background="#637a91">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/gelir_listView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOPLAM"
+        android:id="@+id/total_textView"
+        android:textColor="#fffffafa"
+        android:textSize="24sp"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1200"
+        android:id="@+id/result_textView"
+        android:textColor="#ff2eff33"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginRight="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_alignTop="@+id/total_textView"
+        android:layout_alignEnd="@+id/gelir_listView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="₺"
+        android:id="@+id/signLabel_textView"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/result_textView"
+        android:layout_alignRight="@+id/gelir_listView"
+        android:layout_alignEnd="@+id/gelir_listView"
+        android:layout_marginRight="47dp"
+        android:layout_marginEnd="47dp"
+        android:textColor="#ffffffff"/>
+
+</RelativeLayout>
